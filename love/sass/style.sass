@@ -122,7 +122,9 @@ main
             .column
                 &:last-child
                     .row:last-child
-                        position: relative
+                        display: flex
+                        flex-direction: column
+                        justify-content: center
                         padding: 0
                         margin: 0 auto
                         text-align: center
@@ -134,12 +136,6 @@ main
                         font-size: 25px
                         font-weight: bold
                         line-height: 1.5
-                        .row_text
-                            position: absolute
-                            width: 110px
-                            left: 50%
-                            transform: translateX(-50%)
-                            top: 17%
 
                 .row
                     width: 210px
