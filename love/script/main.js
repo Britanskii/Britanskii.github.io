@@ -88,7 +88,6 @@ modal.addEventListener('click', e => {
 modalCloseBtn.addEventListener('click', closeModal)
 
 modalCloseBtn.addEventListener('click', () => {
-    console.log('Работает');
     closeModal(phoneModal)
 })
 
