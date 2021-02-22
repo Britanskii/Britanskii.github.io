@@ -48,11 +48,20 @@ pluses.forEach(plus => {
 //Modal
 
 const modalTrigger = document.querySelectorAll('[data-modal]'),
+    phoneModalTrigger = document.querySelectorAll('[data-phonemodal]'),
     modal = document.querySelector('.modal'),
+    phoneModal = document.querySelector('.phone_modal'),
     modalCloseBtn = document.querySelector('[data-close]')
 
 
+phoneModalTrigger.forEach(btn => {
+    btn.addEventListener('click', () => {
+        phoneModal.classList.add('show')
+        phoneModal.classList.remove('hide')
+        document.body.style.overflow = 'hidden'
+    })
 
+})
 
 modalTrigger.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -63,9 +72,15 @@ modalTrigger.forEach(btn => {
 
 })
 
+phoneModal.addEventListener('click', e => {
+    if (e.target === phoneModal) {
+        closeModal(phoneModal)
+    }
+})
+
 modal.addEventListener('click', e => {
     if (e.target === modal) {
-        closeModal()
+        closeModal(modal)
     }
 })
 
@@ -81,7 +96,7 @@ document.addEventListener('keydown', (e) => {
     }
 })
 
-function closeModal() {
+function closeModal(modal) {
     modal.classList.add('hide')
     modal.classList.remove('show')
     document.body.style.overflow = ''
