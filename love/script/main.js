@@ -53,6 +53,7 @@ const modalTrigger = document.querySelectorAll('[data-modal]'),
     phoneModal = document.querySelector('.phone_modal'),
     modalCloseBtn = document.querySelector('[data-close]')
 
+console.log(modalCloseBtn);
 
 phoneModalTrigger.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -86,6 +87,10 @@ modal.addEventListener('click', e => {
 
 modalCloseBtn.addEventListener('click', closeModal)
 
+modalCloseBtn.addEventListener('click', () => {
+    console.log('Работает');
+    closeModal(phoneModal)
+})
 
 
 
