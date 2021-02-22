@@ -13,9 +13,10 @@
     .title, .foryou, .video, .icons, .decision, .paragraph, .author, .days, .slider, .questions, .thank, .meet, footer
         padding: 0 calc(50vw - 480px)
     .title
-        &_regist
-            img
-                margin-left: 100px
+        .mechanic
+            &_regist
+                img
+                    margin-left: 100px
                 &_bonus
                     left: 55%
                     font-size: 12px
@@ -321,6 +322,12 @@
             margin-top: 10px !important
             flex-direction: column
             align-items: center
+    .decision_points
+        width: 90%
+    .decision_point
+        padding: 0 20px !important
+        .decision_point_img
+            width: 64px !important
     .decision_info
         img
             width: 100%
@@ -355,6 +362,7 @@
         font-size: 28px !important
         line-height: inherit !important
     .row_text
+        line-height: inherit
         top: 21% !important
     .icons
         padding-top: 50px !important
@@ -391,7 +399,7 @@
         width: inherit !important
     .days
         padding-top: 50px !important
-        padding-bottom: 0px !important
+        padding-bottom: 50px !important
         .days_arrow
             transform: rotate(90deg) translateY(1%)
 
