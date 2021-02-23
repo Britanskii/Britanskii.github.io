@@ -18,7 +18,10 @@ $('.slider').slick({
 
 
 
-const pluses = document.querySelectorAll('.questions_open')
+const pluses = document.querySelectorAll('.questions_open'),
+    height = document.querySelector('.questions_text')
+
+console.log(height.style.getPropertyValue("height"));
 
 
 pluses.forEach(plus => {
@@ -31,7 +34,7 @@ pluses.forEach(plus => {
         //Если он повёрнут
         if (transform.includes('45')) {
             plus.target.parentElement.style.cssText =
-                `height: 36px;
+                `height: 50px;
             overflow: visible;`;
             plus.target.style.transform = 'rotate(0deg)'
         } else {
@@ -52,8 +55,6 @@ const modalTrigger = document.querySelectorAll('[data-modal]'),
     modal = document.querySelector('.modal'),
     phoneModal = document.querySelector('.phone_modal'),
     modalCloseBtn = document.querySelector('[data-close]')
-
-console.log(modalCloseBtn);
 
 phoneModalTrigger.forEach(btn => {
     btn.addEventListener('click', () => {

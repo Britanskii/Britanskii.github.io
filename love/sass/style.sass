@@ -166,23 +166,36 @@ main
     .decision
         min-height: 1200px
         padding-top: 100px
-        background-image: linear-gradient(to top, #a3a3a3, #e6e6e6)
+        background-image: linear-gradient(to bottom, rgba(204,202,202,1), rgba(115,114,114,1))
         &_title
             display: flex
             justify-content: center
             align-items: center
-            font-family: 'BebasNeue'
+            font-size: 46px !important
             text-transform: uppercase
             font-size: 24px
             font-weight: bold
+            .block-1
+                width: 350px
+                font-family: 'BebasNeue' !important
+                display: flex
+                align-items: center
+                justify-content: space-around
+            .block-2
+                width: 350px
+                justify-content: space-around
+                display: flex
+                font-family: 'BebasNeue' !important
+                align-items: center
+                img
+                    width: 85px
             img
-                margin-left: 15px
-                margin-right: 40px
+                width: 70px
         &_subtitle
             margin-top: 25px
             text-align: center
             font-size: 24px
-            font-weight: normal
+            font-weight: bold
             font-stretch: normal
             font-style: normal
             line-height: 1
@@ -193,13 +206,14 @@ main
             display: flex
             justify-content: space-between
             .decision_point
+
                 display: flex
                 align-items: center
                 width: 448px
                 height: 204px
                 border-radius: 5px
                 box-shadow: 1px 1.7px 27px 0 rgba(18, 19, 14, 0.2)
-                background-color: #fbfbfb
+                background-color: rgb(227, 224, 224)
                 padding-left: 50px
                 img
                     width: 98px
@@ -361,7 +375,7 @@ main
             padding-top: 45px
             font-family: 'BebasNeue'
             font-size: 30.5px
-            height: 36px
+            height: 50px
             overflow: hidden
             transition: .5s all
             background-color: white

@@ -124,16 +124,20 @@
                     margin: 0 !important
                 &_bonus
                     position: inherit
-                    font-size: 15px
+                    font-size: 16px !important
                     height: 100%
+                    width: 70%
                     img
                         display: none
 
     .video
+        &_text
+            margin-top: 30px !important
         &_content
             width: 510px
             height: 300px
     .foryou
+        padding-top: 35px !important
         &_points
             .column
                 .row
@@ -141,20 +145,21 @@
                     flex-direction: column
                     justify-content: center
                     padding: 20px !important
-                    width: 150px !important
+                    width: 80% !important
+                    margin-left: 12.5px !important
                     height: 56px
-                    font-size: 13px
+                    font-size: 16px
                 &:last-child
                     .row
                         &:last-child
-                            margin-top: 0 !important
+                            margin-top: 30px !important
                             background-size: contain !important
                             width: 150px !important
+                            margin-left: 65px !important
                         &_text
                             font-size: 25px
                             padding-top: 8px
     .decision
-
         &_info_points
             width: 270px !important
         &_points
@@ -162,7 +167,7 @@
             .decision_point
                 margin: 0 auto
                 margin-top: 25px
-                width: 80% !important
+                width: 70% !important
         &_info
             display: block !important
             img
@@ -192,7 +197,7 @@
                 margin: 0 auto
                 width: 75%
             &_inner
-                font-size: 15px
+                font-size: 18px
                 p
                     margin-top: 25px !important
             &_text
@@ -276,17 +281,23 @@
             .activate_title
                 margin-top: 50px
     header
+        padding-top: 0 !important
+        height: 164px !important
         flex-direction: column
+        padding-top: 15px !important
         .logo
-            justify-content: space-between
+            margin-left: 25px
+            justify-content: space-around !important
+            // align-items: flex-end !important
+            line-height: 1.5
             .text
+                margin-left: 0 !important
                 font-size: 10px
-                margin-left: 25px !important
                 width: 60% !important
         .info
             margin-top: 25px
             text-align: center
-            font-size: 15px !important
+            font-size: 20px !important
     .info_btn
         width: 150px !important
         font-size: 12px !important
@@ -304,17 +315,29 @@
             text-align: center
         &_text
             width: 100% !important
+            &_title
+                font-size: 42px !important
             &_relationship
+                font-weight: bold
                 line-height: 25px
                 width: 250px !important
                 bottom: 161% !important
         .mechanic_text_subtitle
+            font-size: 18px
+            line-height: 1.5
             width: 100% !important
         .mechanic_text_points
+            margin-top: 25px
             flex-direction: column
             .mechanic_text_points
+                font-weight: bold
                 flex-direction: row
                 justify-content: center !important
+                .mechanic_text_pointer
+                    height: 48px
+                &_info
+                    width: 80%
+                    text-align: left
 
     .video
         padding-top: 50px !important
@@ -324,11 +347,6 @@
             height: 180px
         &_text
             font-size: 16px !important
-    .regist_btn
-        width: 200px
-        height: 50px
-        line-height: 50px
-        font-size: 13px
     .foryou
         padding-bottom: 20px
         &_title
@@ -340,9 +358,21 @@
     .decision_points
         width: 100%
     .decision_point
-        padding: 0 20px !important
+        height: inherit !important
+        padding: 30px !important
+        display: block !important
+        &_text
+            display: block
+            width: 220px !important
+            font-size: 22px
+            line-height: 1.4
+            font-weight: 500
+            font-family: 'Roboto'
+            padding: 0 !important
+            margin: 0 !important
+            margin-top: 10px !important
         .decision_point_img
-            width: 64px !important
+            width: 90px !important
     .decision_info
         img
             width: 100%
@@ -366,64 +396,106 @@
             align-items: center
             font-size: 12px !important
         .logo
-            width: 250px
+            width: 320px
+            &_title
+                justify-content: space-around
             &_subtitle
                 width: 100% !important
                 margin: 0 auto !important
                 margin-top: 10px !important
+                font-size: 16px
+                text-align: center
             .text
-                font-size: 10px
-                margin-left: 25px !important
-                width: 50% !important
+                font-size: 14px !important
+                line-height: 1.5 !important
+                // margin-left: 25px !important
+                width: 175px !important
         .copyright
             margin-top: 25px
+            font-size: 16px
+        .contacts
+            font-size: 16px
     .title_text
-        font-size: 28px !important
+        font-size: 44px
         line-height: inherit !important
     .row_text
         line-height: inherit
         top: 21% !important
     .icons
-        padding-top: 50px !important
+        padding-top: 25px !important
+        padding-bottom: 25px !important
         &_points
             margin-top: 40px !important
             flex-direction: column
             &_item
                 width: 100% !important
-                margin-bottom: 25px
+                margin-bottom: 35px
             &_text
                 margin: 0 auto
-                width: 100px !important
+                width: 80% !important
+                font-size: 26px !important
     .decision
-        padding-top: 50px !important
+        padding-top: 25px !important
         &_title
             flex-direction: column
-
             img
-                margin: 20px 0 !important
+
+            .block-1
+                width: 100%
+                justify-content: space-around
+            .block-2
+                margin-top: 10px
+                width: 100%
+                justify-content: space-around
         &_info
             margin-top: 40px !important
+
     .paragraph
         padding-top: 50px !important
         padding-bottom: 0 !important
         .table_subtitle
             margin-top: 50px !important
+            font-size: 44px !important
+        .table
+            padding-left: 20px
+            &_item
+                margin-top: 40px !important
+                font-size: 22px !important
+                line-height: 1.6 !important
     .author
         padding-top: 50px !important
         padding-bottom: 10px !important
-    .author_who_text
-        width: 95% !important
+        &_subtitle
+            margin: 0 auto
+            width: 300px
+            font-size: 20px !important
+    .author_who
+        img
+            width: 300px !important
+        &_text
+            width: 95% !important
+            line-height: 30px
     .feedback
         padding-top: 50px !important
         min-height: 550px !important
         &_title
             width: inherit !important
-            font-size: 18px !important
+            font-size: 20px !important
     .days
+        height: inherit !important
         padding-top: 50px !important
         padding-bottom: 50px !important
         .days_arrow
             transform: rotate(90deg)
+        &_info
+            .days_block
+                height: inherit !important
+            .days_block_title
+                font-size: 32px !important
+            .days_block_text
+                font-size: 20px !important
+                width: 280px !important
+                line-height: 1.6
 
     .slider__item
         opacity: 0
@@ -440,10 +512,17 @@
     .questions
         padding-top: 50px !important
         padding-bottom: 0px !important
+        .questions_column
+            .questions_block
+                padding-top: 50px
+            .questions_open
+                top: 50px !important
     .questions_text
         font-family: BebasNeue
-        width: 150px
-        font-size: 17px !important
+        width: 80%
+        height: 30px
+        font-size: 24px !important
+
     .large
         height: 80px !important
     .mails
