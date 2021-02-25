@@ -105,7 +105,7 @@
                     font-size: 16px
                     width: 430px
                 &_relationship
-                    bottom: 1110px !important
+                    bottom: 1000px !important
                     left: 50%
                     transform: translateX(-50%)
                     position: absolute
@@ -240,6 +240,18 @@
             .questions_block
                 .questions_open
                     right: 5%
+    .slick
+        &-center
+            opacity: 1
+        &-arrow
+            font-size: 0
+            opacity: .2
+            width: 40%
+            background: url('../res/img/left-arrow.svg') no-repeat center
+            background-size: 100px
+        &-next
+            background: url('../res/img/right-arrow.svg') no-repeat center
+            background-size: 100px
 
 @media (max-width: 455.98px)
     .str-section
@@ -288,7 +300,6 @@
         .logo
             margin-left: 25px
             justify-content: space-around !important
-            // align-items: flex-end !important
             line-height: 1.5
             .text
                 margin-left: 0 !important
@@ -302,26 +313,27 @@
         width: 150px !important
         font-size: 12px !important
         margin: 0 auto
-    .mechanic
-        &_regist
-            flex-direction: column
-            &_bonus
-                margin-top: 35px
-        &_face
-            width: 100% !important
-            height: inherit !important
-        .mechanic_text_title
-            font-size: 26px
-            text-align: center
-        &_text
-            width: 100% !important
-            &_title
-                font-size: 42px !important
-            &_relationship
-                font-weight: bold
-                line-height: 25px
-                width: 250px !important
-                bottom: 161% !important
+    .title
+        .mechanic
+            &_regist
+                flex-direction: column
+                &_bonus
+                    margin-top: 35px
+            &_face
+                width: 100% !important
+                height: inherit !important
+            .mechanic_text_title
+                font-size: 26px
+                text-align: center
+            &_text
+                width: 100% !important
+                &_title
+                    font-size: 42px !important
+                &_relationship
+                    font-weight: bold
+                    line-height: 25px
+                    width: 250px !important
+                    bottom: 1125px !important
         .mechanic_text_subtitle
             font-size: 18px
             line-height: 1.5
@@ -386,9 +398,6 @@
         img
             width: 100% !important
             height: inherit !important
-    .slick-dots
-        display: none !important
-        // flex-wrap: wrap
     footer
         height: inherit
         .info
@@ -499,16 +508,6 @@
 
     .slider__item
         opacity: 0
-    .slick
-        &-center
-            opacity: 1
-        &-arrow
-            font-size: 0
-            opacity: .2
-            width: 50px
-            background: url('../res/img/left-arrow.svg') no-repeat center
-        &-next
-            background: url('../res/img/right-arrow.svg') no-repeat center
     .questions
         padding-top: 50px !important
         padding-bottom: 0px !important
@@ -531,3 +530,15 @@
         justify-content: center
         a
             margin-top: 40px
+    .slick
+        &-center
+            opacity: 1
+        &-arrow
+            font-size: 0
+            opacity: .2
+            width: 40%
+            background: url('../res/img/left-arrow.svg') no-repeat center
+            background-size: 100px
+        &-next
+            background: url('../res/img/right-arrow.svg') no-repeat center
+            background-size: 100px
