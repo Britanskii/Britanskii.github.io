@@ -29,6 +29,7 @@ body
             font-size: 24px
             font-weight: bold
             color: #ffffff
+            text-align: center
             &_btn
                 font-size: 16px
                 font-weight: normal
@@ -44,7 +45,7 @@ body
     .mechanic
         display: flex
         justify-content: space-between
-        margin-top: 140px
+        margin-top: 60px
         line-height: 35px
         &_face
             border-radius: 15px
@@ -55,6 +56,8 @@ body
             font-size: 18px
             font-weight: 300
             color: #fff
+            .mechanic_text_relationship
+                font-weight: bold
             &_title
                 margin-top: 45px
                 font-family: 'BebasNeue'
@@ -68,9 +71,10 @@ body
                 margin-top: 30px
                 display: flex
                 justify-content: space-between
+                font-weight: 400
                 &_info
                     margin-left: 20px
-                    width: 157px
+                    width: 200px
                     line-height: 1.33
                 &:last-child
                     .mechanic_text_points_info
@@ -89,6 +93,7 @@ body
                 right: 15%
                 top: 40%
                 line-height: 1.43
+                font-weight: 400
                 img
                     display: block
                     margin-left: -37px
@@ -206,12 +211,11 @@ main
             display: flex
             justify-content: space-between
             .decision_point
-
                 display: flex
                 align-items: center
-                width: 448px
+                width: 40%
                 height: 204px
-                border-radius: 5px
+                border-radius: 20px
                 box-shadow: 1px 1.7px 27px 0 rgba(18, 19, 14, 0.2)
                 background-color: rgb(227, 224, 224)
                 padding-left: 50px
@@ -221,7 +225,7 @@ main
                     font-size: 21.5px
                     padding-left: 15px
                     width: 280px
-                    font-weight: bold
+                    font-weight: 400
                     font-stretch: normal
         &_info
             margin-top: 130px
@@ -239,7 +243,7 @@ main
                         width: 315px
                         height: 68px
                         margin: 13px 0
-                        border-radius: 34px
+                        border-radius: 20px
                         background-color: #d80606
                         padding-left: 35px
                         padding-right: 15px
@@ -259,52 +263,65 @@ main
                         padding-left: 35px
                         padding-right: 15px
                         margin: 13px 0
-                        border-radius: 34px
+                        border-radius: 20px
                         background-color: #101010
                         font-size: 20px
                         font-weight: bold
                         line-height: 68px
     .paragraph
-        padding-top: 170px
-        padding-bottom: 200px
-        .table
-            .table_subtitle
-                margin-top: 90px
-                font-size: 36px
-                text-align: left
-            .table_item
-                margin: 0 auto
-                margin-top: 55px
-                width: 700px
-                list-style-type: disc
-                font-size: 18px
+        padding-top: 100px
+        padding-bottom: 100px
+    .paragraph-title
+        margin-bottom: 100px
+    .paragraph-days
+        display: flex
+        align-items: flex-start
+        justify-content: space-around
+
+        .day
+            width: 100px
+            font-family: BebasNeue
+            font-size: 36px
+            font-weight: bold
+            color: #e8be48
+        ul
+            width: 60%
+            list-style-type: disc
+            font-size: 18px
+            line-height: 1.33
+            li
+                margin-bottom: 35px
     .author
+
         padding-top: 100px
         padding-bottom: 100px
         background-color: #101010
         min-height: 739px
+        .title_text
+            font-size: 30px
         &_subtitle
             font-size: 24px
-            font-weight: normal
+            font-weight: bold
             color: #ffffff
             text-align: center
             margin-top: 32px
         &_who
-            padding-top: 82px
+            padding-top: 60px
             display: flex
             justify-content: space-between
             &_title
                 text-align: left
                 font-size: 30px
             img
-                height: 534px
+                height: 545px
                 border-radius: 15px
             &_text
                 font-size: 16px
                 color: #fff
-                width: 561px
-                p
-                    margin-top: 45px
+                width: 600px
+                line-height: 30px
+                font-weight: 400
+
     .feedback
         padding-top: 160px
         min-height: 880px
@@ -348,6 +365,7 @@ main
                     width: 200px
                     position: absolute
                     bottom: 0
+                    line-height: 1.6
             .days_arrow
                 padding-top: 45px
                 width: 78px
@@ -380,6 +398,8 @@ main
             transition: .5s all
             background-color: white
             padding-left: 10%
+            .questions_info
+                width: 84%
             .white
                 padding-top: 45px
                 height: 50px
@@ -784,3 +804,33 @@ button
 .meet_activate_title
     margin-top: 106px
     font-size: 24px
+
+.back-to-top
+    position: fixed
+    right: 50px
+    bottom: 75px
+    width: 50px
+    height: 50px
+    border-radius: 50%
+    background-color: #404040
+    &:hover
+        filter: brightness(1.5)
+        outline: none
+    &::before, &::after
+        content: ''
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+    &::before
+        width: 4px
+        height: 25px
+        border-top-left-radius: 3px
+        border-top-right-radius: 3px
+        background-color: white
+    &::after
+        width: 15px
+        height: 15px
+        transform: translate(-50%, -50%) rotate(45deg)
+        border-top: 4px solid #fff
+        border-left: 4px solid #fff
