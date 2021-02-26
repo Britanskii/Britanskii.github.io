@@ -110,7 +110,6 @@ function closeModal(modal) {
 function backToTop() {
     let btn = $('.back-to-top')
     $(window).on('scroll', () => {
-        console.log($(window).scrollTop());
         if ($(window).scrollTop() <= 500) {
             btn.fadeOut();
         } else {
