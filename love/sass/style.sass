@@ -5,7 +5,7 @@ body
     min-height: 100%
 
 .title
-    min-height: 1000px
+    padding-bottom: 100px !important
     background-color: #101010
     header
         display: flex
@@ -101,8 +101,8 @@ body
 
 main
     .video
-        min-height: 1000px
-        padding-top: 150px
+        padding-top: 100px
+        padding-bottom: 100px
         &_content
             display: block
             margin: 0 auto
@@ -115,8 +115,8 @@ main
             margin-top: 100px
     .foryou
         padding-top: 100px
+        padding-bottom: 100px
         text-align: center
-        min-height: 1000px
         background-color: #101010
         &_points
             margin-top: 100px
@@ -141,17 +141,16 @@ main
                         font-size: 25px
                         font-weight: bold
                         line-height: 1.5
-
                 .row
                     width: 210px
-                    border-radius: 49px
+                    border-radius: 20px
                     padding: 25px 65px
                     background-color: #ffffff
                     margin-top: 25px
                     font-weight: bold
     .regist_btn
         margin: 0 auto
-        margin-top: 125px
+        margin-top: 100px
     .icons
         min-height: 450px
         padding-top: 125px
@@ -323,8 +322,8 @@ main
                 font-weight: 400
 
     .feedback
-        padding-top: 160px
-        min-height: 880px
+        padding-top: 100px
+        padding-bottom: 100px
         &_title
             margin: 0 auto
             width: 40%
@@ -340,7 +339,6 @@ main
     .days
         padding-top: 100px
         padding-bottom: 100px
-        height: 619px
         background-color: #101010
         &_info
             margin-top: 140px
@@ -372,8 +370,8 @@ main
                 height: 23px
     .questions
         min-height: 500px
-        padding-top: 170px
-        padding-bottom: 170px
+        padding-top: 100px
+        padding-bottom: 5px
         &_text
             font-family: BebasNeue
         &_info
@@ -813,6 +811,7 @@ button
     width: 50px
     height: 50px
     border-radius: 50%
+    display: none
     background-color: #404040
     &:hover
         filter: brightness(1.5)
