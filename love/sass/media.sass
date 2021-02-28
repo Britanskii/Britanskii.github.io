@@ -79,20 +79,11 @@
 @media (max-width: 991.98px)
     .title, .foryou, .video, .icons, .decision, .paragraph, .author, .days, .slider, .questions, .thank, .meet, footer
         padding: 0 calc(50vw - 360px)
-    .title .mechanic_text_points:last-child .mechanic_text_points_info
-        width: 100%
-    main
-        .feedback
-            padding-top: 50px
-            padding-bottom: 50px
-    .slick
-        &-dots
-            margin-top: 50px !important
     .title
-        padding-bottom: 100px !important
         .mechanic
             width: 100%
             padding-top: 130px
+            padding-bottom: 50px
             display: block
             margin: 0 auto
             text-align: center
@@ -146,28 +137,25 @@
             width: 510px
             height: 300px
     .foryou
+        padding-top: 35px !important
         &_points
             .column
-                width: 250px
-                display: flex
-                justify-content: flex-start
-                flex-direction: column
                 .row
                     display: flex
                     flex-direction: column
                     justify-content: center
-                    padding: 25px !important
-                    width: 70% !important
+                    padding: 20px !important
+                    width: 80% !important
                     margin-left: 12.5px !important
                     height: 56px
                     font-size: 16px
                 &:last-child
                     .row
                         &:last-child
-                            width: 80%
                             margin-top: 30px !important
                             background-size: contain !important
-
+                            width: 150px !important
+                            margin-left: 65px !important
                         &_text
                             font-size: 25px
                             padding-top: 8px
@@ -179,7 +167,7 @@
             .decision_point
                 margin: 0 auto
                 margin-top: 25px
-                width: 80% !important
+                width: 70% !important
         &_info
             display: block !important
             img
@@ -238,8 +226,7 @@
             align-items: center
             flex-direction: column
     .regist_btn
-        margin: 0 auto !important
-        margin-top: 50px !important
+        margin: 50px auto !important
     .icons_title
         line-height: inherit
     .icons_points_item
@@ -259,7 +246,7 @@
         &-arrow
             font-size: 0
             opacity: .2
-            width: 40%
+            width: 35%
             background: url('../res/img/left-arrow.svg') no-repeat center
             background-size: 100px
         &-next
@@ -280,7 +267,7 @@
 
 @media (max-width: 605.98px)
     .title, .foryou, .video, .icons, .decision, .paragraph, .author, .days, .slider, .questions, .thank, .meet, footer
-        padding: 0 calc(50vw - 175px)
+        padding: 0 calc(50vw - 160px)
     .str-section
         padding: 0
         width: 80% !important
@@ -305,18 +292,6 @@
                 margin-top: 50px
             .activate_title
                 margin-top: 50px
-    main .paragraph-days
-        flex-direction: column
-        justify-content: center
-    main .paragraph-days ul li
-        width: 100% !important
-    main .paragraph-days .day
-        width: 100%
-    main .paragraph-title
-        margin-bottom: 50px !important
-    main .paragraph-days ul
-        margin-top: 50px
-        width: 90%
     header
         padding-top: 0 !important
         height: 164px !important
@@ -358,7 +333,7 @@
                     font-weight: bold
                     line-height: 25px
                     width: 250px !important
-                    bottom: 1200px !important
+                    bottom: 1125px !important
         .mechanic_text_subtitle
             font-size: 18px
             line-height: 1.5
@@ -373,12 +348,11 @@
                 .mechanic_text_pointer
                     height: 48px
                 &_info
-                    width: 80% !important
+                    width: 80%
                     text-align: left
 
     .video
         padding-top: 50px !important
-        padding-bottom: 50px !important
         min-height: 200px !important
         &_content
             width: 300px
@@ -386,8 +360,7 @@
         &_text
             font-size: 16px !important
     .foryou
-        padding-bottom: 50px !important
-        padding-top: 50px !important
+        padding-bottom: 20px
         &_title
             line-height: inherit
         &_points
@@ -458,8 +431,8 @@
         line-height: inherit
         top: 21% !important
     .icons
-        padding-top: 50px !important
-        padding-bottom: 50px !important
+        padding-top: 25px !important
+        padding-bottom: 25px !important
         &_points
             margin-top: 40px !important
             flex-direction: column
@@ -488,7 +461,7 @@
 
     .paragraph
         padding-top: 50px !important
-        padding-bottom: 50px !important
+        padding-bottom: 0 !important
         .table_subtitle
             margin-top: 50px !important
             font-size: 44px !important
@@ -500,7 +473,7 @@
                 line-height: 1.6 !important
     .author
         padding-top: 50px !important
-        padding-bottom: 50px !important
+        padding-bottom: 10px !important
         &_subtitle
             margin: 0 auto
             width: 300px
@@ -550,7 +523,7 @@
         font-size: 24px !important
 
     .large
-        height: 50px !important
+        height: 80px !important
     .mails
         margin-top: 100px
         flex-direction: column
@@ -563,11 +536,10 @@
         &-arrow
             font-size: 0
             opacity: .2
-            width: 40%
             background: url('../res/img/left-arrow.svg') no-repeat center left
             background-size: 70px
         &-next
             background: url('../res/img/right-arrow.svg') no-repeat center right
             background-size: 70px
-    .back-to-top
-        right: 10px
+    .feedback
+        padding-bottom: 50px

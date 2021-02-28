@@ -107,21 +107,3 @@ function closeModal(modal) {
     document.body.style.overflow = ''
 }
 
-function backToTop() {
-    let btn = $('.back-to-top')
-    $(window).on('scroll', () => {
-        if ($(window).scrollTop() <= 500) {
-            btn.fadeOut();
-        } else {
-            btn.fadeIn();
-        }
-    })
-    $(btn).on('click', (e) => {
-        e.preventDefault();
-        $('html').animate({ scrollTop: 0 }, 500)
-    })
-}
-
-backToTop()
-
-
