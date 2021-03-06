@@ -5,7 +5,7 @@ body
     min-height: 100%
 
 .title
-    padding-bottom: 100px !important
+    padding-bottom: 150px !important
     background-color: #101010
     header
         display: flex
@@ -14,6 +14,7 @@ body
         .logo
             display: flex
             align-items: center
+            margin-left: 125px
             .icon
                 width: 62px
                 height: 48px
@@ -23,25 +24,16 @@ body
                 width: 270px
                 color: #ffffff
                 font-family: Roboto
-                margin-left: 45px
+                margin-left: 25px
 
         .info
-            font-size: 24px
+            font-size: 20px
             font-weight: bold
             color: #ffffff
             text-align: center
             &_btn
-                font-size: 16px
-                font-weight: normal
-                color: #000000
-                width: 209px
-                height: 40px
-                margin-top: 13px
-                border-radius: 20px
-                box-shadow: 0px 2px 0 0 #83692c
-                background-color: #e8be48
-                text-align: center
-                line-height: 40px
+                margin-top: 5px
+
     .mechanic
         display: flex
         justify-content: space-between
@@ -49,15 +41,15 @@ body
         line-height: 35px
         &_face
             border-radius: 15px
-            width: 459px
-            height: 559px
+            height: 610px
+
         &_text
             width: 630px
             font-size: 18px
             font-weight: 300
             color: #fff
             .mechanic_text_relationship
-                font-weight: bold
+                font-weight: 500
             &_title
                 margin-top: 45px
                 font-family: 'BebasNeue'
@@ -65,39 +57,31 @@ body
                 font-size: 54px
             &_subtitle
                 margin-top: 50px
-                width: 535px
-                line-height: 1.29
-            &_points
-                margin-top: 30px
-                display: flex
-                justify-content: space-between
-                font-weight: 400
-                &_info
-                    margin-left: 20px
-                    width: 200px
-                    line-height: 1.33
-                &:last-child
-                    .mechanic_text_points_info
-                        margin-right: 0
-            &_pointer
-                width: 1px
-                height: 61px
-                background-color: #e7ba3d
-                display: inline-block
+                line-height: 1.55
+                font-size: 20px
+        &_points
+            margin-top: 60px
+            display: flex
+            justify-content: space-between
+            line-height: 1.33
+        &_point
+            border-left: 2px solid #e7ba3d
+            padding-left: 15px
         &_regist
             position: relative
             &_bonus
                 position: absolute
-                width: 180px
-                font-size: 14px
-                right: 15%
-                top: 40%
+                width: 250px
+                font-size: 18px
+                right: 0
+                top: -10px
                 line-height: 1.43
                 font-weight: 400
                 img
                     display: block
                     margin-left: -37px
                     margin-bottom: 10px
+                    width: 145px
 
 main
     .video
@@ -122,32 +106,32 @@ main
             margin-top: 100px
             display: flex
             justify-content: space-between
+            flex-wrap: wrap
             color: black
-            font-size: 20px
-            .column
+            font-size: 22px
+            .row
+                width: 280px
+                border-radius: 110px
+                padding: 35px 35px
+                background-color: #ffffff
+                margin-top: 25px
+                font-weight: bold
                 &:last-child
-                    .row:last-child
-                        display: flex
-                        flex-direction: column
-                        justify-content: center
-                        padding: 0
-                        margin: 0 auto
-                        text-align: center
-                        margin-top: 25px
-                        background: url('../res/img/heart.png') no-repeat center
-                        width: 195px
-                        height: 170px
-                        color: white
-                        font-size: 25px
-                        font-weight: bold
-                        line-height: 1.5
-                .row
-                    width: 210px
-                    border-radius: 20px
-                    padding: 25px 65px
-                    background-color: #ffffff
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    padding: 0
+                    margin: 0 70px
+                    text-align: center
                     margin-top: 25px
+                    background: url('../res/img/heart.png') no-repeat center
+                    width: 195px
+                    height: 170px
+                    color: white
+                    font-size: 20px
                     font-weight: bold
+                    line-height: 1.5
+                    border-radius: 0px
     .regist_btn
         margin: 0 auto
         margin-top: 100px
@@ -160,17 +144,18 @@ main
             justify-content: space-around
             &_img
                 display: block
+                height: 80px
                 margin: 0 auto
             &_text
                 margin-top: 41px
                 font-family: 'BebasNeue'
                 text-transform: uppercase
-                font-size: 24px
+                font-size: 30px
                 font-weight: bold
     .decision
         min-height: 1200px
         padding-top: 100px
-        background-image: linear-gradient(to bottom, rgba(204,202,202,1), rgba(115,114,114,1))
+        background-image: linear-gradient(to bottom, #d1d1d1, rgba(115,114,114,1))
         &_title
             display: flex
             justify-content: center
@@ -216,10 +201,11 @@ main
                 height: 204px
                 border-radius: 20px
                 box-shadow: 1px 1.7px 27px 0 rgba(18, 19, 14, 0.2)
-                background-color: rgb(227, 224, 224)
+                background-color: #d1d1d1
                 padding-left: 50px
                 img
                     width: 98px
+
                 &_text
                     font-size: 21.5px
                     padding-left: 15px
@@ -230,6 +216,8 @@ main
             margin-top: 130px
             display: flex
             justify-content: space-between
+            img
+                margin-left: 100px
             &_point
                 display: flex
                 flex-direction: column
@@ -239,8 +227,10 @@ main
                     .decision_info_points
                         display: flex
                         flex-direction: column
-                        width: 315px
-                        height: 68px
+                        width: 250px
+                        padding: 20px
+                        padding-left: 35px
+                        padding-right: 15px
                         margin: 13px 0
                         border-radius: 20px
                         background-color: #d80606
@@ -248,17 +238,18 @@ main
                         padding-right: 15px
                         font-size: 20px
                         font-weight: bold
-                        line-height: 68px
+
                         &:last-child
-                            padding-top: 15px
+                            padding-top: 25px
+                            padding-bottom: 25px
                             line-height: inherit
                 &_dark
                     margin-top: 30px
                     .decision_info_points
                         display: flex
                         flex-direction: column
-                        width: 315px
-                        height: 68px
+                        width: 250px
+                        padding: 20px
                         padding-left: 35px
                         padding-right: 15px
                         margin: 13px 0
@@ -266,10 +257,16 @@ main
                         background-color: #101010
                         font-size: 20px
                         font-weight: bold
-                        line-height: 68px
+                        &:last-child
+                            padding-top: 25px
+                            padding-bottom: 25px
+                            line-height: inherit
+
     .paragraph
         padding-top: 100px
         padding-bottom: 100px
+        &_btn
+            margin-top: 50px
     .paragraph-title
         margin-bottom: 100px
     .paragraph-days
@@ -278,41 +275,40 @@ main
         justify-content: space-around
 
         .day
-            width: 100px
+            width: 150px
             font-family: BebasNeue
-            font-size: 36px
+            font-size: 46px
             font-weight: bold
             color: #e8be48
         ul
             width: 60%
             list-style-type: disc
-            font-size: 18px
+            font-size: 20px
             line-height: 1.33
             li
                 margin-bottom: 35px
     .author
-
         padding-top: 100px
         padding-bottom: 100px
         background-color: #101010
         min-height: 739px
         .title_text
-            font-size: 30px
+            font-size: 46px
         &_subtitle
             font-size: 24px
             font-weight: bold
             color: #ffffff
             text-align: center
-            margin-top: 32px
+            margin-top: 20px
         &_who
             padding-top: 60px
             display: flex
             justify-content: space-between
             &_title
                 text-align: left
-                font-size: 30px
+                font-size: 21px !important
             img
-                height: 545px
+                height: 560px
                 border-radius: 15px
             &_text
                 font-size: 16px
@@ -323,7 +319,7 @@ main
 
     .feedback
         padding-top: 100px
-        padding-bottom: 100px
+        padding-bottom: 50px
         &_title
             margin: 0 auto
             width: 40%
@@ -336,6 +332,7 @@ main
             letter-spacing: normal
             text-align: center
             color: #101010
+
     .days
         padding-top: 100px
         padding-bottom: 100px
@@ -371,9 +368,11 @@ main
     .questions
         min-height: 500px
         padding-top: 100px
-        padding-bottom: 5px
+        padding-bottom: 50px
         &_text
             font-family: BebasNeue
+            font-size: 28px
+            height: 30px
         &_info
             margin-top: 25px
             font-size: 20px
@@ -382,45 +381,48 @@ main
         &_column
             padding: 0
             display: block
-            margin-top: 80px
             margin: 0 auto
+            margin-top: 80px
             text-align: left
-            width: 100%
+            width: 80%
         .questions_block
+            margin: 0 auto
+            border-top: 1px solid #d4d4d4
             position: relative
-            padding-top: 45px
             font-family: 'BebasNeue'
             font-size: 30.5px
-            height: 50px
+            width: 90%
+            height: 30px
             overflow: hidden
             transition: .5s all
             background-color: white
-            padding-left: 10%
+            padding: 20px 0
             .questions_info
                 width: 84%
+                transition: all .5s
             .white
                 padding-top: 45px
-                height: 50px
+                height: 35px
                 background-color: white
             .questions_open
                 position: absolute
-                top: 45px
-                right: 15%
+                top: 20px
+                right: 0
                 background-color: #101010
-                width: 28px
-                height: 28px
+                width: 40px
+                height: 40px
                 border-radius: 50%
                 cursor: pointer
                 transition: .5s all
                 &:hover::before, &:hover::after
-                    transition: .5s all
+                    transition: .3s all
                     background-color: #e8be48
                 &::before
                     display: block
                     content: ''
                     background-color: white
                     width: 2px
-                    height: 14px
+                    height: 22px
                     position: absolute
                     top: 50%
                     left: 50%
@@ -429,7 +431,7 @@ main
                     display: block
                     content: ''
                     background-color: white
-                    width: 14px
+                    width: 22px
                     height: 2px
                     position: absolute
                     top: 50%
@@ -445,7 +447,6 @@ footer
         display: flex
         justify-content: space-between
         padding-top: 60px
-        padding-bottom: 60px
         .logo
             .logo_title
                 display: flex
@@ -517,18 +518,21 @@ footer
     text-transform: uppercase
 
 .info_btn
-    cursor: pointer
-    font-size: 16px
-    font-weight: normal
-    color: #000000
-    width: 209px
-    height: 40px
-    margin-top: 13px
-    border-radius: 20px
-    box-shadow: 0px 2px 0 0 #83692c
-    background-color: #e8be48
-    text-align: center
-    line-height: 40px
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 33px
+    width: 150px
+    color: #101010
+    font-size: 14px
+    font-family: 'Roboto',Arial,sans-serif
+    line-height: 1.55
+    font-weight: 600
+    border-radius: 30px
+    background-color: #d9b665
+    border-color: transparent
+    border-style: solid
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out
 
 .red
     color: #d80606
@@ -698,8 +702,8 @@ ul
         right: 0
         top: 0
     &-dots
-        margin-top: 150px
         padding-left: 0
+        margin-top: 50px
         display: flex
         align-items: center
         justify-content: center
@@ -833,3 +837,10 @@ button
         transform: translate(-50%, -50%) rotate(45deg)
         border-top: 4px solid #fff
         border-left: 4px solid #fff
+
+hr
+    border: none
+    color: black
+    background-color: black
+    height: 1px
+    margin-bottom: 10px

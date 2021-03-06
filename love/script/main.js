@@ -34,13 +34,13 @@ pluses.forEach(plus => {
         //Если он повёрнут
         if (transform.includes('45')) {
             plus.target.parentElement.style.cssText =
-                `height: 50px;
+                `height: 35px;
             overflow: visible;`;
             plus.target.style.transform = 'rotate(0deg)'
         } else {
             //Увеличиваем контент на height
             plus.target.parentElement.style.cssText =
-                `height: ${width + 60}px;
+                `height: ${width + 100}px;
                 overflow: visible;`;
             plus.target.style.transform = 'rotate(-45deg)'
         }
