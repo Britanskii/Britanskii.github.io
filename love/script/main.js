@@ -4,7 +4,6 @@ $('.slider').slick({
     dots: true,
     slidesToShow: 3,
     centerMode: true,
-    adaptiveHeight: true,
     draggable: false,
     responsive: [
         {
