@@ -19,9 +19,9 @@ body
                 width: 62px
                 height: 48px
             .text
-                font-size: 14px
+                font-size: 16px
                 display: inline-block
-                width: 270px
+                width: 300px
                 color: #ffffff
                 font-family: Roboto
                 margin-left: 25px
@@ -38,36 +38,38 @@ body
         display: flex
         justify-content: space-between
         margin-top: 60px
-        line-height: 35px
         &_face
             border-radius: 15px
-            height: 610px
-
+            height: 700px
         &_text
-            width: 630px
+            margin-left: 30px
             font-size: 18px
             font-weight: 300
             color: #fff
             .mechanic_text_relationship
-                font-weight: 500
+                font-weight: 400
+                font-size: 20px
+                width: 80%
+                line-height: 35px
             &_title
-                margin-top: 45px
+                margin-top: 80px
                 font-family: 'BebasNeue'
                 text-transform: uppercase
                 font-size: 54px
             &_subtitle
-                margin-top: 50px
+                margin-top: 80px
                 line-height: 1.55
-                font-size: 20px
+                font-size: 21px
         &_points
             margin-top: 60px
             display: flex
-            justify-content: space-between
             line-height: 1.33
             font-weight: 400
         &_point
             border-left: 2px solid #e7ba3d
             padding-left: 15px
+            line-height: 1.55
+            margin-right: 50px
         &_regist
             position: relative
             &_bonus
@@ -93,6 +95,7 @@ main
             display: block
             margin: 0 auto
         &_text
+            font-weight: 300
             text-align: center
             font-size: 26px
             margin-top: 70px
@@ -107,7 +110,7 @@ main
         &_points
             margin-top: 100px
             display: flex
-            justify-content: space-between
+            justify-content: space-evenly
             flex-wrap: wrap
             color: black
             font-size: 22px
@@ -218,9 +221,7 @@ main
         &_info
             margin-top: 130px
             display: flex
-            justify-content: space-between
-            img
-                margin-left: 100px
+            justify-content: space-around
             &_point
                 display: flex
                 flex-direction: column
@@ -236,7 +237,7 @@ main
                         padding-right: 15px
                         margin: 13px 0
                         border-radius: 20px
-                        background-color: #d80606
+                        background-color: #fc0004
                         padding-left: 35px
                         padding-right: 15px
                         font-size: 20px
@@ -271,6 +272,7 @@ main
         &_btn
             margin-top: 50px
     .paragraph-title
+        font-size: 46px
         margin-bottom: 100px
     .paragraph-days
         display: flex
@@ -284,12 +286,13 @@ main
             font-weight: bold
             color: #e8be48
         ul
-            width: 60%
+            width: 70%
             list-style-type: disc
-            font-size: 20px
-            line-height: 1.33
+            font-size: 22px
+            line-height: 1.6
             li
                 margin-bottom: 35px
+                line-height: 1.6
     .author
         padding-top: 100px
         padding-bottom: 100px
@@ -299,7 +302,7 @@ main
             font-size: 46px
         &_subtitle
             font-size: 24px
-            font-weight: bold
+            font-weight: 500
             color: #ffffff
             text-align: center
             margin-top: 20px
@@ -309,14 +312,14 @@ main
             justify-content: space-evenly
             &_title
                 text-align: left
-                font-size: 24px !important
+                font-size: 28px !important
             img
                 height: 580px
                 border-radius: 15px
             &_text
                 font-size: 18px
                 color: #fff
-                width: 600px
+                width: 650px
                 line-height: 30px
                 font-weight: 400
 
@@ -343,7 +346,7 @@ main
         &_info
             margin-top: 140px
             display: flex
-            justify-content: space-between
+            justify-content: space-around
             .days_block
                 display: flex
                 color: white
@@ -452,7 +455,7 @@ footer
     font-size: 14px
     .info
         display: flex
-        justify-content: space-between
+        justify-content: space-around
         padding-top: 60px
         .logo
             .logo_title
@@ -462,16 +465,18 @@ footer
                     width: 62px
                     height: 48px
                 .text
-                    font-size: 14px
                     display: inline-block
-                    width: 149px
-                    font-size: 12px
-                    font-weight: 300
-                    margin-left: 45px
+                    width: 175px
+                    font-size: 14px
+                    font-weight: 400
+                    margin-left: 30px
+                    line-height: 1.5
             &_subtitle
                 margin-top: 30px
+                font-size: 16px
                 width: 135px
         .copyright
+            font-size: 16px
             text-align: center
             &_text
                 p
@@ -480,20 +485,19 @@ footer
                 margin-top: 31px
                 p
                     margin-top: 8px
-                    font-size: 12px
         .contacts
-            text-align: center
+            text-align: right
+            font-size: 18px
             img
                 margin-right: 5px
             .phone
                 .icon
                     margin-top: 30px
             .info_btn
-                margin: 0 auto
-                margin-top: 10px
-                width: 133px
-                height: 30px
-                font-size: 12px
+                margin-left: 70px
+                margin-top: 20px
+                padding: 1px 10px
+                font-size: 14px
                 line-height: 30px
 
 .title_text
@@ -515,7 +519,7 @@ footer
     height: 72px
     border-radius: 36px
     box-shadow: 0px 2px 65px 0 rgba(216, 6, 6, 0.3)
-    background-color: #d80606
+    background-color: #fc0004
     font-family: Roboto
     font-size: 18px
     font-weight: bold
@@ -534,7 +538,7 @@ footer
     font-size: 14px
     font-family: 'Roboto',Arial,sans-serif
     line-height: 1.55
-    font-weight: 600
+    font-weight: 700
     border-radius: 30px
     background-color: #d9b665
     border-color: transparent
@@ -542,7 +546,7 @@ footer
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out
 
 .red
-    color: #d80606
+    color: #fc0004
 
 .bold
     font-weight: bold
@@ -658,7 +662,7 @@ ul
 .modal_btn
     display: block
     margin: 20px auto
-    background-color: #d80606
+    background-color: #fc0004
     border-radius: 4px
     color: rgba(255, 255, 255, 1)
     width: 306px
@@ -676,15 +680,21 @@ ul
     display: none
 
 .slider
+    width: 100%
     margin-top: 60px
     position: relative
     img
-        height: 400px
+        max-width: 100%
+        height: 100%
 
 .slider__item
     transition: all .3s ease
     opacity: 0.4
     text-align: center
+    height: 560px
+    display: flex
+    align-items: center
+    justify-content: center
 
 .slick
     &-slide
@@ -848,3 +858,6 @@ hr
     background-color: black
     height: 1px
     margin-bottom: 10px
+
+.light-bold
+    font-weight: 500

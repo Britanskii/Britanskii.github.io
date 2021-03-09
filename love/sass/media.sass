@@ -9,7 +9,7 @@
                 width: 80% !important
                 font-size: 16px !important
 
-@media (min-width: 991.98px) and (max-width: 1135.98px)
+@media (min-width: 991.98px) and (max-width: 1255.98px)
     .title, .foryou, .video, .icons, .decision, .paragraph, .author, .days, .questions, .thank, .meet, footer
         padding: 0 calc(50vw - 480px)
     .title
@@ -34,13 +34,15 @@
                     font-size: 16px
                     width: 430px
                 &_relationship
+                    width: inherit !important
                     font-size: 16px
                 &_title
                     width: 440px
-                    font-size: 38px
-            &_points
-
-                font-size: 16px
+                    font-size: 56px
+                    line-height: inherit !important
+        .mechanic_point
+            font-size: 16px
+            margin-right: 8px !important
 
     .foryou
         &_points
@@ -78,13 +80,15 @@
                 margin-left: 50px
                 width: 90% !important
 
-@media (min-width: 1199.98px)
+@media (min-width: 1255.98px)
     .title, .foryou, .video, .icons, .decision, .paragraph, .author, .days,  .questions, .thank, .meet, footer
-        padding: 0 calc(50vw - 610px)
+        padding: 0 calc(50vw - 620px)
 
-@media (max-width: 991.98px)
+@media (max-width: 1117.98px)
     .title, .foryou, .video, .icons, .decision, .paragraph, .author, .days, .questions, .thank, .meet, footer
         padding: 0 calc(50vw - 360px)
+    .slider__item
+        height: 460px
     .title .mechanic_text_points:last-child .mechanic_text_points_info
         width: 100%
     main
@@ -125,7 +129,7 @@
                     font-size: 18px
                     width: 540px
                 &_relationship
-                    bottom: 1050px !important
+                    bottom: 1205px !important
                     left: 50%
                     transform: translateX(-50%)
                     position: absolute
@@ -135,6 +139,7 @@
                     font-size: 48px
             &_point
                 padding-left: 20px
+                font-size: 17px
                 text-align: left !important
             &_regist
                 position: static
@@ -299,8 +304,21 @@
     main .paragraph-days ul
         margin-top: 50px
         width: 90%
+    footer
+        height: inherit !important
+        padding-bottom: 50px
+        .info
+            flex-wrap: wrap
+        .contacts
+            margin-top: 20px
+            text-align: center !important
+            .info_btn
+                margin: 0 auto !important
+                margin-top: 20px !important
 
 @media (max-width: 455.98px)
+    .slider__item
+        height: 360px
     .str-section
         padding: 0
         width: 280px !important
@@ -324,6 +342,7 @@
             margin-top: 30px !important
             justify-content: space-around !important
         &_point
+            margin: 0 !important
             padding-left: 10px !important
         &_regist
             justify-content: space-around !important
@@ -346,6 +365,7 @@
             width: 480px
             height: 270px
     .foryou_points
+        margin-top: 50px !important
         .row
             margin: 0 auto !important
             margin-top: 25px !important
@@ -478,12 +498,13 @@
                     font-weight: bold
                     line-height: 25px
                     width: 250px !important
-                    bottom: 1105px !important
+                    font-size: 18px !important
+                    bottom: 1120px !important
             &_points
                 flex-direction: column
                 align-items: center
             &_point
-                margin-top: 20px
+                margin-top: 20px !important
                 font-size: 16px
                 width: 230px
                 font-weight: 400
