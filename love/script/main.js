@@ -7,7 +7,7 @@ $('.slider').slick({
     draggable: false,
     responsive: [
         {
-            breakpoint: 1117,
+            breakpoint: 992,
             settings: {
                 slidesToShow: 1,
             }
