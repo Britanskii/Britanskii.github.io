@@ -65,6 +65,10 @@ body
                 margin-top: 80px
                 line-height: 1.55
                 font-size: 21px
+                width: 720px
+                // br
+                //     content: ""
+
         &_points
             margin-top: 60px
             display: flex
@@ -619,25 +623,27 @@ ul
             width: 100%
             margin: 0 auto
 
-// .jcwf_container
-//     position: fixed
-//     top: 0
-//     left: 0
-//     z-index: 100
-//     display: none
-//     width: 100%
-//     height: 100%
-//     overflow: hidden
-//     background-color: rgba(0,0,0,.5)
-//     .str-section
-//         position: absolute
-//         left: 50%
-//         top: 50%
-//         transform: translateX(-50%) translateY(-50%)
-//         width: 500px
-//     p
-//         text-align: center
-//         font-size: 13px
+.jcwf_container
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: 100
+    display: none
+    overflow: hidden
+    background-color: rgba(0,0,0,.5)
+    .str-section
+        position: absolute
+        left: 50%
+        padding: 15px
+        transform: translateX(-50%)
+        top: 30%
+        width: 90%
+        max-width: 500px
+    p
+        text-align: center
+        font-size: 13px
 .modal_close
     position: absolute
     top: 8px

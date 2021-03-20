@@ -20,8 +20,6 @@ $('.slider').slick({
 const pluses = document.querySelectorAll('.questions_open'),
     height = document.querySelector('.questions_text')
 
-console.log(height.style.getPropertyValue("height"));
-
 
 pluses.forEach(plus => {
     // Открытие контента и движение плюса
@@ -51,9 +49,11 @@ pluses.forEach(plus => {
 
 const modalTrigger = document.querySelectorAll('[data-modal]'),
     phoneModalTrigger = document.querySelectorAll('[data-phonemodal]'),
-    modal = document.querySelector('.modal'),
+    modal = document.querySelector('.jcwf_container'),
     phoneModal = document.querySelector('.phone_modal'),
     modalCloseBtn = document.querySelector('[data-close]')
+
+console.log(modal);
 
 phoneModalTrigger.forEach(btn => {
     btn.addEventListener('click', () => {
