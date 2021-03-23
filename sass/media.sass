@@ -28,8 +28,10 @@
                     left: 55%
                     font-size: 20px
             &_text
+                width: 580px
                 &_subtitle
                     font-size: 16px
+                    width: 550px !important
                 &_relationship
                     width: inherit !important
                     font-size: 16px
@@ -322,7 +324,7 @@
         padding: 0
         width: 280px !important
     .str-wrapper
-        width: 280px !important
+        width: 90% !important
     .strwf_button
         width: 80% !important
         font-size: 14px !important
@@ -332,6 +334,12 @@
 @media (max-width: 610.98px)
     .title, .foryou, .video, .icons, .decision, .paragraph, .author, .days,  .questions, .thank, .meet, footer
         padding: 0 calc(50vw - 240px)
+    .title
+        .mechanic
+            &_text_subtitle
+                width: 480px !important
+    .str-section
+        top: 10% !important
     .mechanic
         &_text
             width: inherit !important
@@ -348,8 +356,6 @@
         &_text_title
             margin-top: 15px !important
             font-size: 38px !important
-        &_text_subtitle
-            width: 420px !important
         &_regist
             flex-direction: column
         &_regist_bonus
@@ -475,10 +481,6 @@
         margin: 0 auto
     .title
         .mechanic
-            br
-                content: ""
-            br:after
-                content: "\00a0"
             &_regist
                 flex-direction: column
                 &_bonus
@@ -495,12 +497,15 @@
                 &_relationship
                     font-weight: bold
                     line-height: 25px
-                    width: 240px !important
+                    width: 90% !important
                     font-size: 18px !important
-                    bottom: 1210px !important
+                    top: -675px !important
             &_points
                 flex-direction: column
                 align-items: center
+                br
+                    content: ""
+
             &_point
                 margin-top: 20px !important
                 font-size: 16px
@@ -511,7 +516,7 @@
         .mechanic_text_subtitle
             font-size: 18px
             line-height: 1.5
-            width: 100% !important
+            width: 310px !important
         .mechanic_text_points
             margin-top: 25px
             flex-direction: column
